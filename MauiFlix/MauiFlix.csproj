@@ -62,4 +62,83 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Categorias\animacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\aventura.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\comedia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\documentario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\drama.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\ficcao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\guerra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\infantil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\nacional.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\romance.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="Categorias\suspense.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Categorias\acao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="animacao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="aventura.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="comedia.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="documentario.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="drama.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="ficcao.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="guerra.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="infantil.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="nacional.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="romance.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="suspense.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Posters\" />
+	</ItemGroup>
+
 </Project>
