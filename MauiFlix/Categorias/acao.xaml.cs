@@ -6,4 +6,9 @@ public partial class acao : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void btnmissao_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
