@@ -2,23 +2,19 @@
 {
     public partial class MainPage : ContentPage
     {
-        int count = 0;
-
-        public MainPage()
+        private void animacao_Clicked(System.Object sender, System.EventArgs e)
         {
-            InitializeComponent();
+
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private void acao_Clicked(System.Object sender, System.EventArgs e)
         {
-            count++;
 
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
+        }
 
-            SemanticScreenReader.Announce(CounterBtn.Text);
+        private void aventura_Clicked(System.Object sender, System.EventArgs e)
+        {
+
         }
     }
 

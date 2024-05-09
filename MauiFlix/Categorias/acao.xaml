@@ -10,7 +10,6 @@
                   ColumnDefinitions="*, *"
                   Padding="5">
                 <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" Source="mission_impossible.jpg" x:Name="btnmissao" Clicked="btnmissao_Clicked"/>
-                <
             </Grid>
         </ScrollView>
     </VerticalStackLayout>
