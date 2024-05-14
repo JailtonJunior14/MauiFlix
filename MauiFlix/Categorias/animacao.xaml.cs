@@ -6,4 +6,14 @@ public partial class animacao : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void ImageButton_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void dragonbtn_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
