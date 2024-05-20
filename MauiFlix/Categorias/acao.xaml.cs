@@ -22,13 +22,15 @@ public partial class acao : ContentPage
 
     }
 
-    private void ImageButton_Clicked(object sender, EventArgs e)
-    {
-
-    }
-
     private void btntop_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+            Navigation.PushAsync(new topgun());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("OPS!!", ex.Message, "OK");
+        }
     }
 }

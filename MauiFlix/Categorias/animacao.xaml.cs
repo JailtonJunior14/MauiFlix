@@ -16,4 +16,19 @@ public partial class animacao : ContentPage
     {
 
     }
+
+    private void spiderbutton_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void toystory_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void up_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }
