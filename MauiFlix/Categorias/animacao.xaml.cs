@@ -1,3 +1,5 @@
+using MauiFlix.Filmes.animacao;
+
 namespace MauiFlix;
 
 public partial class animacao : ContentPage
@@ -14,7 +16,14 @@ public partial class animacao : ContentPage
 
     private void dragonbtn_Clicked(object sender, EventArgs e)
     {
-
+        try
+        {
+            Navigation.PushAsync(new dragon());
+        }
+        catch (Exception ex)
+        {
+            DisplayAlert("OPS!!", ex.Message, "OK");
+        }
     }
 
     private void spiderbutton_Clicked(object sender, EventArgs e)
