@@ -2,11 +2,46 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiFlix.documentario"
-             Title="documentario">
+             Title="documentario"
+             BackgroundColor="Black">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="ImageButton" x:Key="btnfilm">
+                <Setter Property="HorizontalOptions" Value="Fill"/>
+                <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+                <Setter Property="CornerRadius" Value="5"/>
+                <Setter Property="BackgroundColor" Value="Transparent"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ScrollView>
+            <Grid RowDefinitions="300,300,300"
+              ColumnDefinitions="*,*"
+              Padding="5"
+              ColumnSpacing="2"
+              RowSpacing="2">
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="0" x:Name="racionais"
+                         Style="{StaticResource btnfilm}"
+                         Source="racionais.jpg"
+                         Clicked="racionais_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="0" x:Name="einstein"
+                         Style="{StaticResource btnfilm}"
+                         Source="einstein.jpg"
+                         Clicked="einstein_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="0" Grid.Row="1" x:Name="planeta"
+                         Style="{StaticResource btnfilm}"
+                         Source="nossoplaneta.jpg"
+                         Clicked="planeta_Clicked"/>
+                <ImageButton Aspect="AspectFill" Grid.Column="1" Grid.Row="1" x:Name="fischer"
+                         Style="{StaticResource btnfilm}"
+                         Source="fischer.jpg"
+                         Clicked="fischer_Clicked"/>
+
+
+            </Grid>
+        </ScrollView>
+
     </VerticalStackLayout>
+
 </ContentPage>
